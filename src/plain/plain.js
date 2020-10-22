@@ -101,4 +101,4 @@ function isPlainObject(value) {
   return key === undefined || hasOwn(value, key);
 }
 
-module.exports = {type, hasOwn, isPlainObject};
+export {type, hasOwn, isPlainObject};

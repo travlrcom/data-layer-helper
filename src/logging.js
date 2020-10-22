@@ -39,7 +39,7 @@ function log(toLog, logLevel) {
   }
 }
 
-module.exports = {
+export {
   LogLevel,
   log,
 };

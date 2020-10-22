@@ -438,4 +438,4 @@ function processCommand_(command, model) {
   }
 }
 
-module.exports = DataLayerHelper;
+export { DataLayerHelper };
