@@ -11,7 +11,6 @@
  * @author bkuhn@google.com (Brian Kuhn)
  */
 
-goog.module('dataLayerHelper.plain');
 
 
 /**
@@ -102,4 +101,4 @@ function isPlainObject(value) {
   return key === undefined || hasOwn(value, key);
 }
 
-exports = {type, hasOwn, isPlainObject};
+module.exports = {type, hasOwn, isPlainObject};

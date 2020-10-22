@@ -44,10 +44,10 @@
  * @author bkuhn@google.com (Brian Kuhn)
  */
 
-goog.module('dataLayerHelper.helper.DataLayerHelper');
-const {LogLevel, log} = goog.require('dataLayerHelper.logging');
-const {expandKeyValue, isArray, isString, isArguments, merge} = goog.require('dataLayerHelper.helper.utils');
-const {isPlainObject, type} = goog.require('dataLayerHelper.plain');
+
+import {LogLevel, log} from './../logging'
+import {expandKeyValue, isArray, isString, isArguments, merge} from './../helper/utils'
+import {isPlainObject, type} from './../plain/plain'
 
 /**
  * @typedef {{
@@ -376,8 +376,6 @@ class DataLayerHelper {
   }
 }
 
-window['DataLayerHelper'] = DataLayerHelper;
-
 /**
  * Helper function that will build the abstract model interface using the
  * supplied dataLayerHelper.
@@ -440,4 +438,4 @@ function processCommand_(command, model) {
   }
 }
 
-exports = DataLayerHelper;
+module.exports = DataLayerHelper;
