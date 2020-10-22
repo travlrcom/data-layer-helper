@@ -93,7 +93,7 @@ function merge(from, to) {
   delete to['_clear'];
 }
 
-exports = {
+module.exports = {
   expandKeyValue,
   isArray,
   isString,
